@@ -8,7 +8,7 @@ const headers = () => ({
 });
 
 
-const BASE_URL = 'http://localhost:5000/api';
+
 const BASE_URL = "https://speechify-offm.onrender.com//api";
 
 async function request(path, options = {}) {
