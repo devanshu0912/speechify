@@ -9,7 +9,7 @@ const app = express();
 app.use(cors({
   origin: [
     'http://localhost:3000',
-    'https://speechify-weld.vercel.app'
+    'https://speechify-self.vercel.app'
   ],
   credentials: true
 }));
