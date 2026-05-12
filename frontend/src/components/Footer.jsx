@@ -91,18 +91,19 @@ export default function Footer() {
               <div>
                 🎓 Guided by:{' '}
                 <strong style={{ color: '#a8a29e' }}>
-                  Mr. Neeraj Baishwar
+                  Mr. Neeraj Baishwar,
+                  Mr.Ritesh Kumar
                 </strong>
               </div>
 
-              <div>
+              {/* <div>
                 👨‍🏫 Faculty:{' '}
                 <strong style={{ color: '#a8a29e' }}>
                   Mr. Ritesh Kumar
                 </strong>
               </div>
             </div>
-          </div>
+          </div> */}
 
           <div className="footer-section">
             <h5>Tech Stack</h5>
