@@ -1,6 +1,4 @@
-// ── Central API service ───────────────────────────────
-// All calls to the backend go through here.
-// The "proxy" in package.json forwards /api/* to http://localhost:5000
+
 
 const getToken = () => localStorage.getItem('speechify_token');
 
@@ -9,16 +7,9 @@ const headers = () => ({
   ...(getToken() ? { Authorization: `Bearer ${getToken()}` } : {}),
 });
 
-// async function request(path, options = {}) {
-//   const res = await fetch(`/api${path}`, {
-//     headers: headers(),
-//     ...options,
-//   });
-//   const data = await res.json();
-//   if (!res.ok) throw new Error(data.error || 'Something went wrong');
-//   return data;
-// }
+
 const BASE_URL = 'http://localhost:5000/api';
+const BASE_URL = "https://speechify-offm.onrender.com//api";
 
 async function request(path, options = {}) {
   const res = await fetch(`${BASE_URL}${path}`, {
