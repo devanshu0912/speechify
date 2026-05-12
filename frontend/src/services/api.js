@@ -9,7 +9,7 @@ const headers = () => ({
 
 
 
-const BASE_URL = "https://speechify-offm.onrender.com//api";
+const BASE_URL = "https://speechify-offm.onrender.com/api";
 
 async function request(path, options = {}) {
   const res = await fetch(`${BASE_URL}${path}`, {
