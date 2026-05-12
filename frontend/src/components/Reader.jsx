@@ -21,6 +21,7 @@ const FONTS = [
   { label: 'Lexend',  value: "'Lexend', sans-serif" },
   { label: 'Serif',   value: "'DM Serif Display', serif" },
   { label: 'Mono',    value: "'Courier New', monospace" },
+  { label: 'Dyslexic', value: "'OpenDyslexic', sans-serif" },
 ];
 
 const HARD_WORDS = new Set(['dyslexia','processing','assistance','adventure','companion','comfortable','extraordinary','precipitation','algorithm','juxtaposition','photosynthesis','approximately','consequently','immediately','particularly','personalized','neurological']);
@@ -33,7 +34,7 @@ export default function Reader({ onSaveHistory }) {
   const [lineHeight, setLineHeight]   = useState(1.9);
   const [boldText, setBoldText]       = useState(false);
   const [overlay, setOverlay]         = useState(OVERLAYS[1]);
-  const [font, setFont]               = useState(FONTS[0]);
+  const [font, setFont]               = useState(FONTS[3]);
   const [speed, setSpeed]             = useState(1);
   const [speaking, setSpeaking]       = useState(false);
   const [wordIndex, setWordIndex]     = useState(-1);
